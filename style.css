@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #4c4b63;
+    color: white;
+    font-family: cursive;
+}
+.card{
+    height: 60vh;
+    width: 40vw;
+    box-shadow: 2px 2px 50px #4c4b51;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+}
+.title{
+    margin-top: 5rem;
+    font-size: 300%;
+}
+body{
+    display: grid;
+    place-items: center;
+    row-gap: 3rem;
+}
+.btn{
+    width: 10rem;
+    border-radius: 10px;
+    height: 4rem;
+    font-size: 250%;
+    text-align: center;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.city{
+    font-size: 3rem;
+}
+.temp,.wind,.humid{
+    font-size: 150%;
+}
+.icon{
+    width: 4rem;
+}
+
+
+@media (width<=640px){
+    .card{
+        width: 60vw;
+    }
+}
+@media (width<=450px){
+    .card{
+        width: 80vw;
+    }
+    .title{
+        font-size: 2.5rem;
+    }
+}

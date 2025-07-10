@@ -4,20 +4,20 @@ const wind = document.querySelector(".wind").textContent;
 const humid = document.querySelector(".humid").textContent;
 var front = "https://api.openweathermap.org/data/2.5/weather?q=";
 var back = "&appid=5c7ce1f04a77c09801a918f5142ab3cc";
-const cities = [
-  "Delhi",
-  "Bangalore",
-  "Chennai",
-  "Jaipur",
-  "VisakhaPatnam",
-  "Mumbai",
-  "Kolkata",
-  "Chandigarh",
-  "Srinagar",
-  "Hyderabad",
-  "Dhanbad",
-  "Ranchi",
-];
+// const cities = [
+//   "Delhi",
+//   "Bangalore",
+//   "Chennai",
+//   "Jaipur",
+//   "VisakhaPatnam",
+//   "Mumbai",
+//   "Kolkata",
+//   "Chandigarh",
+//   "Srinagar",
+//   "Hyderabad",
+//   "Dhanbad",
+//   "Ranchi",
+// ];
 window.onload = function () {
   reload();
 };
@@ -42,8 +42,8 @@ async function reload() {
 }
 //document.querySelector(".temp").textContent = temperature + data.main;
 async function refresh() {
-  document.querySelector(".city").textContent =
-    cities[Math.floor(Math.random() * cities.length)];
+  // document.querySelector(".city").textContent =
+  //   cities[Math.floor(Math.random() * cities.length)];
   var city = document.querySelector(".city").textContent;
   const url = front + city + back;
   const response = await fetch(url);
